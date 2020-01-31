@@ -1,0 +1,272 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    top: 0;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0rem 0px 1.4rem;
+    box-sizing: border-box;
+    border-bottom: 1px solid grey;
+    background-color: white;
+    z-index: 99999999999;
+}
+
+header nav {
+    display: flex;
+}
+
+header h3 {
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    margin: 0 0.7rem 0 0.7rem;
+}
+
+header nav div {
+    height: 50px;
+    border: none;
+}
+
+.navDivs:hover {
+    cursor: pointer;
+    align-items: center;
+    background: black;
+    color: white;
+}
+
+header div {
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    height: 3.3rem;
+    width: 3.3rem;
+}
+
+#maneraFea {
+    top: 50px;
+    height: 30rem;
+    position: absolute;
+    width: 10rem;
+    background-color: white;
+    border: 2px solid black;
+    display: none;
+}
+
+#maneraFea nav {
+    display: flex;
+    flex-direction: column;
+}
+
+#maneraFea div {
+    margin: 0.4rem;
+    height: 100%;
+}
+
+#checkbox-useless {
+    display: none;
+}
+
+#checkbox-useless:checked~#maneraFea {
+    display: flex;
+}
+
+.noborder {
+    border: none;
+}
+
+.divDiv {
+    height: 50px;
+    border: none;
+}
+
+.divDiv:hover {
+    cursor: pointer;
+    align-items: center;
+    background: red;
+    color: white;
+}
+
+main {
+    margin-top: 50px;
+    width: 100%;
+}
+
+main>aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid grey;
+}
+
+main>aside h1 {
+    font-size: 7rem;
+}
+
+.aside-contain-p {
+    display: flex;
+}
+
+.aside-contain-p>p {
+    margin: 1rem 1rem 1rem 1rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.main-2 {
+    position: relative;
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.main-2::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    background-color: gray;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 1px;
+}
+
+.main-2 article {
+    width: 45%;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.article-header {
+    font-size: 1.6rem;
+    font-family: "Arial Narrow Bold", sans-serif;
+    font-weight: 600;
+}
+
+.article-main {
+    font-size: 1.3rem;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.article-img {
+    width: 100%;
+    height: 50%;
+    margin: 2rem 0 2rem 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 1rem;
+}
+
+.main-3 {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.main-3 article {
+    width: 90%;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.main-3::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    background-color: gray;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 1px;
+}
+
+.main-3 .article-img {
+    width: 100%;
+    height: 40%;
+    margin: 2rem 0 2rem 0;
+}
+
+span {
+    background-color: none;
+    color: black;
+}
+
+.searching {
+    background-color: red;
+    color: royalblue;
+    display: inline-block;
+}
+
+@media (max-width: 1630px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1300px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .navLol {
+        display: none;
+    }
+    .useless {
+        border: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .main-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    main>aside h1 {
+        font-size: 6rem;
+    }
+    .main-2 article {
+        width: 90%;
+        padding: 2rem;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    main>aside h1 {
+        font-size: 3.7rem;
+    }
+    .aside-contain-p>p {
+        margin: 0.5rem;
+    }
+}
